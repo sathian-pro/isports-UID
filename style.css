@@ -1,0 +1,613 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.car11 .img11
+{
+    height: 500px;
+    width: 100%;
+}
+#myVideo{
+    position: relative;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+#main-c{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#main-c h1{
+    font-family: 'Shojumaru', cursive;
+
+    font-size: 15rem;
+    color:rgba(225, 225, 225, .1);
+    background-image: url("https://discovery.sndimg.com/content/dam/images/discovery/fullset/2020/4/2/nightsky2_getty.jpg.rend.hgtvcom.616.462.suffix/1585862428885.jpeg");
+    background-repeat: repeat-x;
+    -webkit-background-clip: text;
+    animation: animates 70s linear infinite;
+    font-weight: bolder;
+
+  }
+  @keyframes animates{
+    0%{
+      background-position: left 0px top 10px;
+    }
+    40%{
+      background-position: left 800px top 10px;
+    }
+  }
+#main-c h4{
+    font-family: 'Shojumaru', cursive;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-left: 18%;
+    color: ;
+}
+/*
+                    NAV-SECTION */
+/* .nav1
+{
+    border-bottom: 2px solid black;
+    height: 10vh;
+    padding: 20px;
+    background-color:white;
+    margin: 0 5%;
+}
+.content-1
+{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+/* CAROUSEL */
+#carousel
+{
+    width: 100%;
+    height: 100%;
+
+}
+ul{
+    text-align: justify;
+}
+ a{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Rakkas', cursive;
+    color: white;
+    margin-right: 30px;
+}
+.car1,.img1
+{
+    height: 500px;
+}
+/* DEALS */
+#deals
+{
+    background-color: #000;
+}
+#box-container {
+    display: flex;
+    height: 500px;
+    flex-direction: column;
+    margin: 2%;
+
+
+    padding:0 5%;
+}
+  #box-1 {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+
+  }
+
+  #box-2 {
+    display: flex;
+    height: 500px;
+    flex-direction: row;
+  }
+  #third,#fourth,#six,#eight{
+      background-color: #B00020;
+      display: flex;
+      width: 25%;
+      align-items: center;
+      text-align: center;
+      padding-left: 35px;
+      padding-right: 35px;
+  }
+  #first,#second,#five,#seven{
+    background-color: #B00020;
+    display: flex;
+    width: 25%;
+    align-items: center;
+      text-align: center;
+    padding-left: 65px;
+  }
+
+  #first,#second,#third,#fourth,#five,#six,#seven,#eight{
+    transition: all .2s ease-in-out;
+    box-shadow: 0 0 25px 10px black;
+  }
+  #first:hover,#second:hover,#third:hover,#fourth:hover,#five:hover,#six:hover,#seven:hover,#eight:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 25px 10px black;
+    cursor: pointer;
+
+  }
+#box-1,#box-2, h3{
+    font-size: 23px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Fredoka One';
+}
+ .num{
+    font-size: 55px;
+    color:rgba(225, 225, 225, .1);
+  background-image: url("https://st3.depositphotos.com/2666537/12855/i/950/depositphotos_128558532-stock-photo-green-grass-background-texture.jpg");
+  background-repeat: repeat-x;
+  -webkit-background-clip: text;
+  animation: animates 70s linear infinite;
+  font-weight: bolder;
+
+}
+@keyframes animates{
+  0%{
+    background-position: left 0px top 10px;
+  }
+  40%{
+    background-position: left 800px top 10px;
+  }
+}
+.heading .pls{
+
+    margin-top: 10%;
+    margin-left: 45%;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-family: 'Shojumaru';
+}
+.heading .plss{
+    margin-top: 10%;
+    margin-left: 25%;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-family: 'Shojumaru';
+}
+.heading .pl{
+    margin-top: 10%;
+    margin-left: 95%;
+    letter-spacing: 10px;
+    font-weight: bolder;
+    font-family: 'Shojumaru';
+}
+/*
+    BANK  */
+.car2, .img2
+{
+    width: 100%;
+    height: 150px;
+}
+.car3{
+    height: 700px;
+    width: 100%;
+}
+/*
+        WORKOUT    */
+        .workout,.food
+        {
+            padding:3% 7% 0 7%;
+        }
+      .wo-food-1 h3
+      {
+          padding-left:7% ;
+          font-family:  'Ubuntu', sans-serif;
+          font-size: 4rem;
+      }
+      .wo-food-2 h3
+      {
+        padding-left:7% ;
+        margin-top: 8%;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 4rem;
+      }
+      .wo-food-1 h5
+      {
+        font-family: 'Skranji', cursive;
+        font-size: 2rem;
+        padding-left:7% ;
+        word-spacing: 5px;
+      }
+      .wo-food-2 h5
+      {
+        font-family: 'Skranji', cursive;
+        font-size: 2rem;
+        padding-left:7% ;
+        word-spacing: 5px;
+      }
+      .wo-food-1 p, .wo-food-2 p
+      {
+        font-family: 'Averia Libre', cursive;
+        font-size: 1.2rem;
+        padding-left:7% ;
+
+      }
+       ul
+        {
+            position: relative;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 70vh;
+            background-color: #ccc;
+            margin: 0;
+            padding: 0;
+        }
+
+
+         ul li
+        {
+            list-style: none;
+            position: relative;
+            width:20%;
+            height: 100%;
+            border-right: 1px solid #000;
+            float: left;
+            box-sizing: border-box;
+            transition: 0.5s;
+            text-align: center;
+        }
+       ul li:nth-child(1)
+        {
+            background: url(https://ak.picdn.net/offset/photos/596fa95917fb156e48066fd6/medium/photo.jpg);
+            background-size: cover;
+            background-position: left;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+         ul li:nth-child(2)
+        {
+            background: url(https://www.wallpaperup.com/uploads/wallpapers/2016/10/17/1026843/87fae02ec3377fbcaed05f8b64292c54-700.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+        ul li:nth-child(3)
+        {
+            background: url(https://www.lefthudson.com/wp-content/uploads/2019/11/yoga-wallpapers-luxury-yoga-inspired-workouts-latest-swag-the-fitness-circuit-gypsy-escapade-2019-of-yoga-wallpapers.jpg);
+            background-size: cover;
+            background-position: left;
+        }
+       ul li:nth-child(4)
+        {
+            background: url(https://lh3.googleusercontent.com/proxy/YAJPRSLXy9u9jb4mPFhqEAkCSkp3Sqo7cKz__PI-mvqoOdX_s2FBh5LY3pOY9P071VlUF37NT8Gluj1ZU3C71GJ9HXPUfm8ap-_8BcxQmYmmDEJpMhJ6C7KXbhlcmV1GaCMXLRfo_3Jvmv_bq1BVB6DXi80Z8-rZoCfE3xAcxIb51fT44TLDE_zVDkftmO0grl0kVEqFteSH2uDfqR4F0ABpjg);
+            background-size: cover;
+            background-position: left;
+        }
+       ul li:nth-child(5)
+        {
+            background: url(https://shaktialbir.com/wp-content/uploads/2015/02/zumba-albir-benidorm-calpe.jpg);
+            background-size: cover;
+            background-position: left;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        .food ul li:nth-child(1)
+        {
+            background: url(https://www.desiclik.com/images/P/7FC4DAEB-8530-47C4-B968-D38E5CCE0CBA-02.jpeg);
+            background-size: cover;
+            background-position: left;
+            border-top-left-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+        .food ul li:nth-child(2)
+        {
+            background: url(https://i0.wp.com/images-prod.healthline.com/hlcmsresource/images/AN_images/indian-diet-weight-loss-1296x728-feature.jpg?w=1155&h=1528);
+            background-size: cover;
+            background-position: left;
+        }
+        .food ul li:nth-child(3)
+        {
+            background: url(https://kj1bcdn.b-cdn.net/media/25879/healthy-foods.png);
+            background-size: cover;
+            background-position: left;
+        }
+        .food ul li:nth-child(4)
+        {
+            background: url(https://media.istockphoto.com/photos/rainbow-from-smoothies-watermelon-papaya-mango-spinach-and-dragon-picture-id1015270538);
+            background-size: cover;
+            background-position: left;
+        }
+        .food ul li:nth-child(5)
+        {
+            background: url(https://csmng.com/files/2020/04/200403-F-PO640-1002.jpg);
+            background-size: cover;
+            background-position: left;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+       ul:hover li
+        {
+            width: 10%;
+        }
+         ul li:hover{
+            width: 60%;
+        }
+       ul li .content p
+        {
+            position: relative;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+            margin: 2%;
+        }
+        ul li:hover .content
+        {
+            margin: 100px 25px 0 30px;
+        }
+        ul li .content h2{
+            margin-top: 60%;
+            background: rgba(0,0,0.8);
+            color: #fff;
+        }
+        ul li:hover .content h2{
+            margin-top: 25%;
+            background: rgb(36, 40, 55);
+            color:#1089ff;
+        }
+    ul li:hover .content p
+       {
+        position: relative;
+            bottom: 0;
+            left: 0;
+            z-index: 0;
+            background: rgba(0,0,0.8);
+            box-sizing: border-box;
+            color: #fff;
+            transition: 0.2s;
+            transition-delay: 0.2s;
+            margin: 2%;
+       }
+.car4 img
+{
+  height: 700px;
+  width: 100%;
+}
+
+/* PROMISES */
+#promise{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.contain{
+    position: relative;
+    width: 1050px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    transition: 0.5s;
+    transform: skewY(-10deg);
+}
+.contain .card
+{
+   position:relative;
+   width: 300px;
+   height: 400px;
+   background: whitesmoke;
+   transition: 0.5s;
+
+}
+.contain .card::before
+{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 15px;
+  background:  #B00020;
+  transform-origin: bottom;
+   transform: skewX(45deg);
+   transition: 0.5s;
+}
+.contain .card::after
+{
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  width: 15px;
+  height: 50%;
+  background: #B00020;
+  transform-origin: left;
+   transform: skewY(45deg);
+   transition: 0.5s;
+   border-bottom: 200px solid white;
+}
+.contain .card:hover{
+    transform: translateY(-40px);
+}
+.contain .card .imgBx
+{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: #B00020;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.contain .card .imgBx i
+{
+    margin-top: 30px;
+    max-width: 100px;
+
+}
+.contain .card .imgBx .cc
+{
+    position: relative;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    color: #777;
+    text-align: center;
+}
+.contain .card .con
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 25px 50px 25px 50px;
+    color:#777;
+    text-align: center;
+}
+#promise h3
+{
+    color: black;
+    margin-top: 20px;
+}
+.contain .card i
+{
+    color: greenyellow;
+}
+/*** BRANDS ***/
+
+.brand
+{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   background: url("https://i.pinimg.com/originals/0a/ce/58/0ace58924eaac57684bb073c3b779684.jpg");
+   background-attachment: fixed;
+   text-align: center;
+}
+.sport{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("https://i.pinimg.com/originals/0a/ce/58/0ace58924eaac57684bb073c3b779684.jpg");
+    background-attachment: fixed;
+    text-align: center;
+}
+.container1
+{
+    margin: 7% 0;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 50%;
+   padding: 3% 4%;
+}
+.container1 .card1
+{
+    position: relative;
+    max-width: 300px;
+    height: 215px;
+    background-color: #fff;
+    margin: 30px 10px 50px 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.3s ease-in-out;
+    margin-right: 5px;
+}
+.container1 .card1:hover
+{
+    height: 420px;
+}
+.container1 .card1 .imgBx1
+{
+    position: relative;
+    width: 260px;
+    height: 300px;
+    top: -60px;
+    left:8px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+.container1 .card1 .imgBx1 .im
+{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.container1 .card1 .conti
+{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    font-family: 'Averia Libre', cursive;
+    transition: 0.3s ease-in-out;
+}
+.container1 .card1:hover .conti
+{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s;
+}
+ .nd
+{
+ margin-left: 7%;
+ font-family: 'Ubuntu', sans-serif;
+ font-size: 4rem;
+}
+.nda
+{
+margin-left: 10%;
+ font-family: 'Ubuntu', sans-serif;
+ font-size: 4rem;
+ margin-top: 6%;
+}
+#carousel4
+{
+    margin-top: 3%;
+}
+.img4,.car4
+{
+    height: 700px
+}
+/* HEADING */
+.heading
+{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    background: url(https://wallpaperstream.com/wallpapers/full/blue-hd/Wooden-Wall-Light-Blue-Wallpaper.jpg) no-repeat 50% 50%;
+   background-attachment: fixed;
+
+}
+main{
+  margin: 0px auto
+}
+.heading .conte h2
+{
+    font-size: 6rem;
+    color: white;
+   margin-top: 30px;
+}
+.wave
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

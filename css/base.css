@@ -1,0 +1,109 @@
+body.bo
+{
+font-family: 'Manrope', sans-serif;
+background-image: url("../images/football-wal.jpg");
+object-fit: cover;
+align-content: center;
+background-repeat: no-repeat;
+background-position: top;
+height: 800px;
+
+}
+img.logo {
+  height: 30px;
+  width: 30px;
+}
+
+img.logo1 {
+  height: 25px;
+  width: 25px;
+}
+
+
+
+ul.nav {
+  font-family: 'Manrope', sans-serif;
+  list-style-type: none;
+  padding: 0px 5px;
+  width: 100%;
+  top: 0;
+  overflow: auto;
+  background-color: rgb(36, 40, 55);
+  border-bottom: : 5px solid lightgrey;
+}
+
+li.nav-opt
+{
+  padding: 0px 5px;
+  position: relative;
+  display: block;
+  margin-top: 0.1cm;
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt-right {
+  margin-top: 0.1cm;
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+float: right;
+}
+
+li.nav-opt-1 {
+  position: relative;
+
+  display: block;
+  padding: 14px 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt-active {
+  margin-top: 0.1cm;
+  height: inherit;
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  background-color: white;
+  color: #1089ff;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt:hover {
+  background-color: ;
+  color: #1089ff;
+
+}
+
+a.root:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+a.root:link {
+  color: inherit;
+}
+
+a.root:visited {
+  color: inherit;
+}
+section.main
+{
+  height: 100%;
+  width: 100%;
+  margin: 0px 0px 0px 0px;
+}
+iframe.fit
+{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

@@ -1,0 +1,155 @@
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="CartStyling.css">
+  <script src="CartActions.js"></script>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>iSports-iCart</title>
+  <link rel="icon" href="images/logo2.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="nav">
+        <li class="nav-opt-1"><a href="some.html" class="root">
+          <img class="logo" src="images/logo2.png" alt="logo-of-iSports" style="width:30px;height:30px;">
+          <b>iSports</b>
+        </a></li>
+        <li class="nav-opt"><a href="index.html" class="root">Home</a></li>
+        <li class="nav-opt"><a class="root" href="ishop.html">iShop</a></li>
+        <li class="nav-opt"><a class="root" href="iplay.html">iPlay</a></li>
+        <li class="nav-opt"><a class="root" href="support.html">Support</a></li>
+        <div style="width:37%;"></div>
+        <form class="form-inline my-40 my-lg-1" role="search" method="get" action="index.html" style="float: right;">
+          <input class="form-control my-lg-1" type="search" placeholder="Search" aria-label="Search" style="margin-top: 0cm;width:; padding: 0px 10px; margin-right: 10px;">
+          <button class="btn btn-outline-primary my-1 my-sm-0" type="submit">Search</button>
+        </form>
+        <li class="nav-opt-right">
+          <a class="root" href="icart.html">
+            <img class="logo1" src="images/cart.png" alt="iCart">
+          </a></li>
+        <li class="nav-opt-right">
+          <a class="root" href="signin.html">
+            <img class="logo1" src="images/dp.png" alt="profile" style="border-radius: 50px;" id="dp">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="basket">
+      <div class="basket-module">
+        <label for="promo-code">Enter a promotional code</label><br>
+        <input id="promo-code" type="text" name="promo-code" maxlength="5" class="promo-code-field" style="border-radius: 10px;">
+        <button style="margin-left: 20px;width:70px;padding: 4px 10px;" class="btn btn-primary" onclick="CheckCoupon()">Apply</button>
+<!--class="promo-code-cta"-->
+      </div>
+      <div class="basket-labels">
+        <ul>
+          <li class="item item-heading">Item</li>
+          <li class="price">Price</li>
+          <li class="quantity">Quantity</li>
+          <li class="subtotal">Subtotal</li>
+        </ul>
+      </div>
+      <div class="basket-product" id="BP#1">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/cart1.jpg" alt="Placholder Image 2" class="product-frame">
+          </div>
+          <div class="product-details">
+            <h1 style="font-size:20px;"><strong><span class="item-quantity" id="quant#1">4</span> x Eliza J</strong> Lace Sleeve Cuff Dress</h1>
+            <p><strong>white, Size 18</strong></p>
+            <p>Product Code - 232321939</p>
+          </div>
+        </div>
+        <div class="price" id="unit#1">26.00</div>
+        <div class="quantity">
+          <input type="number" value="4" min="1" class="quantity-field" id="quantity#1" oninput="ChangeQuantity('1')">
+        </div>
+        <div class="$subtotal$" id="price#1">104.00</div>
+        <div class="remove" onclick="Remove('BP#1')">
+          <button>Remove</button>
+        </div>
+      </div>
+      <div class="basket-product" id="BP#2">
+        <div class="item">
+          <div class="product-image">
+            <img src="images/cart2.jpg" alt="Placholder Image 2" class="product-frame" style="height:180px;">
+          </div>
+          <div class="product-details">
+            <h1 style="font-size:20px;"><strong><span class="item-quantity" id="quant#2">1</span> x Whistles</strong> Spandex sports suit</h1>
+            <p><strong>Navy-Red, Size 10</strong></p>
+            <p>Product Code - 232321235</p>
+          </div>
+        </div>
+        <div class="price" id="unit#2">26.00</div>
+        <div class="quantity">
+          <input type="number" value="1" min="1" class="quantity-field" id="quantity#2" oninput="ChangeQuantity('2')">
+        </div>
+        <div class="$subtotal$" id="price#2">26.00</div>
+        <div class="remove" onclick="Remove('BP#2')">
+          <button>Remove</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div style="height: 200px;"></div>
+      <div class="summary">
+        <div class="summary-total-items"><span class="total-items" style="font-size:15px;color: rgb(36, 40, 55);"> Items in your Bag</span></div>
+        <div class="summary-subtotal">
+          <div class="subtotal-title">Subtotal</div>
+          <div class="subtotal-value final-value" id="basket-subtotal">130.00</div>
+          <div class="summary-promo hide">
+            <div class="promo-title">Promotion</div>
+            <div class="promo-value final-value" id="basket-promo"></div>
+          </div>
+        </div>
+        <div class="summary-delivery">
+          <select name="delivery-collection" class="summary-delivery-selection">
+              <option value="0" selected="selected">Select Collection or Delivery</option>
+             <option value="collection">Collection</option>
+             <option value="first-class">Royal Mail 1st Class</option>
+             <option value="second-class">Royal Mail 2nd Class</option>
+             <option value="signed-for">Royal Mail Special Delivery</option>
+          </select>
+        </div>
+        <div class="summary-total">
+          <div class="total-title">Total</div>
+          <div class="total-value final-value" id="basket-total">130.00</div>
+        </div>
+        <div class="summary-checkout">
+          <button class="checkout-cta">Go to Secure Checkout</button>
+        </div>
+      </div>
+    </aside>
+    <div class="blue"><br>
+      <div style="height:30px;width:100px;"></div>
+    <div style="">
+    <button type="submit" onclick="index.html" class="btn btn-light" style="padding: 6px 27px;width:250px;opacity:0.8;margin: 10px auto;background-color:#1089ff;"><a href="index.html" class="blur">Add More Items to Cart</a></button>
+  </div>
+  <div style="height:30px;width:100px;"></div>
+    <div style="">
+    <button type="submit" onclick="index.html" class="btn btn-light" style="padding: 6px 27px;width:250px;opacity:0.8;background-color:#1089ff;"><a href="sign.html" class="blur">Sign Out</a></button>
+    </div>
+  </main>
+
+<script>
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" http-equiv="refresh">
+<meta name="application-name"><head>
+<meta charset="UTF-8">
+<title>iSports-Account</title>
+<link rel="stylesheet" type="text/css" href="css/signupcss.css">
+<link rel="icon" href="images/logo2.png" type="image/png">
+<link href="https://fonts.googleapis.com/css?family=Manrope&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Piedra&display=swap" rel="stylesheet">
+</head>
+<body class="bo">
+  <header>
+    <nav>
+      <ul class="nav">
+        <li class="nav-opt-1"><a href="some.html" class="root">
+          <img class="logo" src="images/logo2.png" alt="logo-of-iSports">
+          <b>iSports</b>
+        </a></li>
+        <li class="nav-opt"><a href="index.html" class="root">Home</a></li>
+        <li class="nav-opt"><a class="root" href="ishop.html">iShop</a></li>
+        <li class="nav-opt"><a class="root" href="iplay.html">iPlay</a></li>
+        <li class="nav-opt"><a class="root" href="support.html">Support</a></li>
+        <div style="width:37%;"></div>
+        <form class="form-inline my-40 my-lg-1" role="search" method="get" action="index.html" style="float: right;">
+          <input class="form-control my-lg-1" type="search" placeholder="Search" aria-label="Search" style="margin-top: 0cm;width:; padding: 0px 10px; margin-right: 10px;">
+          <button class="btn btn-outline-primary my-1 my-sm-0" type="submit">Search</button>
+        </form>
+        <li class="nav-opt-right">
+          <a class="root" href="icart.html">
+            <img class="logo1" src="images/cart.png" alt="iCart">
+          </a></li>
+        <li class="nav-opt-right" >
+          <a class="root" href="sign.html">
+            <img class="logo1" src="images/dp.png" alt="profile" style="border-radius: 50px;" id="dp">
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <div class="body">
+<div class="acc">
+  <div class="main-log">
+<br><br>
+<h1 class="term">iSports</h1>
+<p class="cos">Sign-up </p>
+<div>
+<form>
+  <div class="sin">
+    <label for="inputName">Name</label><br>
+
+    <div class="row" style="margin-bottom: 12px;">
+    <div class="col">
+      <input type="text" class="form-control" placeholder="First name">
+    </div>
+    <div class="col">
+      <input type="text" class="form-control" placeholder="Last name">
+    </div>
+  </div>
+  </div>
+    <div class="form-group">
+      <label for="inputEmail">Email</label>
+      <input type="email" class="form-control" id="inputEmail">
+      <small id="emailHelp" class="form-text text-muted" style="color:black;">We'll never share your email with anyone else.</small>
+    </div>
+    <label for="inputName">Username</label><br>
+    <div class="input-group mb-2">
+      <div class="input-group-prepend">
+        <div class="input-group-text" style="margin-bottom: 12px;">@</div>
+      </div>
+      <input type="text" class="form-control" id="inlineFormInputGroup"  style="margin-bottom: 12px;" placeholder="Username">
+</div>
+  </div>
+    <div class="form-group">
+      <label for="inputPhone">Phone Number</label>
+      <input type="number" class="form-control" id="inputPhone">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Password</label>
+      <input type="password" name="pass1" class="form-control" id="inputPassword">
+    </div>
+    <div class="form-group">
+      <label for="inputPassword">Confirm Password</label>
+      <input type="password" name="pass2" class="form-control" id="inputPassword">
+    </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="number" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div><br>
+  <button type="submit" class="btn btn-light" style="padding: 6px 27px;width:100%;opacity:1;">Create Account</button>
+</form><br><br><br>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="foot">
+  <div class="foot-main">
+    <div class="main1">
+<h4 style="text-align: center;">iSports Community</h4><br>
+<Ul style="list-style-type:none;">
+<li class="opp">Customer Serveice</li>
+<li class="opp">Quality & quandity</li>
+<li class="opp">Customer rating</li>
+<li class="opp">Community page</li>
+<li class="opp">Customer Policy</li>
+
+</Ul>
+    </div>
+    <div class="main1">
+      <h4 style="text-align: center;">Private Policy</h4><br>
+      <Ul style="list-style-type:none;">
+      <li class="opp1">Terms & service</li>
+      <li class="opp1">Brand policy</li>
+      <li class="opp1">Legal</li>
+      <li class="opp1">Reserved</li>
+      <li class="opp1">FAQ's</li>
+
+      </Ul>
+    </div>
+
+</div>
+
+</footer>
+<script>
+function login() {
+var un = document.getElementById('un').value;
+var pas = document.f1.password.value;
+
+if (un == '' || pas == '') {
+  alert("Enter a valid credit");
+}
+
+}
+</script>
+</body>
+
+</html>

@@ -1,0 +1,211 @@
+html {
+    scroll-behavior: smooth;
+  }
+body{
+    overflow: hidden;
+}
+.banner1,.banner2,.banner3,.banner4{
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+}
+.text-box1{
+    animation-delay: 0s;
+}
+.text-box2{
+    animation-delay: 5s;
+}
+.text-box3{
+    animation-delay: 10s;
+}
+.text-box4{
+    animation-delay: 15;
+}
+img{
+    width: 120%;
+    position: absolute;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    animation: zoom-out 3s linear infinite;
+}
+.text-box{
+    width: 600px;
+    position:absolute;
+    top: 10px;
+    left:30%;
+    color: white;
+    animation: animates 3s linear infinite;
+    transform:translateY(100px);
+    text-align: center;
+}
+@keyframes animates{
+    10%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
+.text-box h1{
+    margin-bottom: 40px;
+    font-size: 120px;
+    font-weight: bolder;
+    font-family: 'Shojumaru';
+    letter-spacing: 5px;
+}
+.text-box p{
+    font-size: 30px;
+    margin-top:80px ;
+    font-family: 'Rakkas';
+}
+.text-box span{
+    background-color:maroon;
+    height: 5px;
+    width: 200px;
+    position:absolute;
+    left: 0;
+    margin-left: 180px;
+}
+.banner1{
+    animation: slide1 12s linear infinite;
+}
+.banner2{
+    animation: slide2 12s linear infinite;
+}
+.banner3{
+    animation: slide3 12s linear infinite;
+}
+.banner4{
+    animation: slide4 12s linear infinite;
+}
+@keyframes slide1{
+    0%{
+        visibility: visible;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    } 
+    100%{
+        visibility: visible;
+    }    
+}
+@keyframes slide2{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: visible;
+    }
+    75%{
+        visibility: hidden;
+    } 
+    100%{
+        visibility: hidden;
+    }    
+}
+@keyframes slide3{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: visible;
+    } 
+    100%{
+        visibility: hidden;
+    }    
+}
+@keyframes slide4{
+    0%{
+        visibility: hidden;
+    }
+    25%{
+        visibility: hidden;
+    }
+    50%{
+        visibility: hidden;
+    }
+    75%{
+        visibility: hidden;
+    } 
+    100%{
+        visibility: visible;
+    }    
+}
+@keyframes zoom-out{
+    100%{
+        width:100% ;
+    }
+}
+
+a {
+    position: absolute;
+    bottom: 8px;
+    left: 42%;
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ff0084 0%, #33001b 51%, #ff0084 100%);
+    background-size: 500%;
+    border-radius: 50px;
+    text-align: center;
+    z-index: 1;
+    font-weight: bolder;
+    font-family: 'Finger Paint';
+  }
+  a:hover{
+      animation: animate 8s linear infinite;
+  }
+  @keyframes animate{
+      0%{
+          background-position: 0%;
+      }
+      0%{
+        background-position: 500%;
+    }
+}
+    a:before{
+        content: '';
+        position: absolute;
+        top: -5px;
+        left:-5px;
+        right:-5px;
+        bottom:-5px;
+        z-index:-1;
+        background:linear-gradient(to right, #ff0084 0%, #33001b 51%, #ff0084 100%);
+        background-size: 500%;
+        border-radius: 60px;
+        filter: blur(20px);
+        opacity: 0;
+        transition: 0.5s;
+    }
+    a:hover:before
+    {
+        filter: blur(20px);
+        opacity: 1;
+        animation: animate 8s linear infinite;
+    }
+   

@@ -1,0 +1,251 @@
+/* nav bar*/
+body.bo
+{
+font-family: 'Manrope', sans-serif;
+background-image: url("../images/football-wal.jpg");
+object-fit: cover;
+align-content: center;
+background-repeat: no-repeat;
+background-position: center;
+height: 1000px;
+
+}
+img.logo {
+  height: 30px;
+  width: 30px;
+}
+
+img.logo1 {
+  height: 25px;
+  width: 25px;
+}
+
+
+
+ul.nav {
+  font-family: 'Manrope', sans-serif;
+  list-style-type: none;
+  padding: 0px 5px;
+  width: 100%;
+  top: 0;
+  overflow: auto;
+  background-color: rgb(36, 40, 55);
+  border-bottom: : 5px solid lightgrey;
+}
+
+li.nav-opt
+{
+  padding: 0px 5px;
+  position: relative;
+  display: block;
+  margin-top: 0.1cm;
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt-right {
+  float: right;
+  margin-top: 0.1cm;
+  padding: 10px 10px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+float: right;
+}
+
+li.nav-opt-1 {
+  position: relative;
+
+  display: block;
+  padding: 14px 14px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt-active {
+  margin-top: 0.1cm;
+  height: inherit;
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  background-color: white;
+  color: #1089ff;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+}
+
+li.nav-opt:hover {
+  background-color: ;
+  color: #1089ff;
+
+}
+
+a.root:hover {
+  text-decoration: none;
+  color: black;
+}
+
+
+a.root:link {
+  color: inherit;
+}
+
+a.root:visited {
+  color: inherit;
+}
+main
+{
+  margin-top: 2%;
+}
+div.body
+{
+  overflow: auto;
+  margin: 0px auto;
+  width: 90%;
+  background-color: inherit;
+  border-radius: 10px;
+
+}
+p.cos
+{
+  text-align: center;
+  color: white;
+}
+div.acc
+{
+  overflow: auto;
+display: block;
+  background-color: #1089ff;
+  opacity: 1;
+  width: 40%;
+  height: 80%;
+  margin: 2% auto;
+  border-radius: 10px;
+}
+.term
+{
+  display: block;
+  font-family: 'Piedra', cursive;
+  text-align: center;
+  color:white;
+}
+div.main-log
+{
+  overflow: auto;
+display: block;
+  opacity: 1;
+  width: 78%;
+  height: 100%;
+padding: 30px 30px; margin: auto;
+  background-color: ;
+}
+.parto
+{
+  text-align: right;
+}
+a.for
+{
+  color: black;
+}
+a.for:hover
+{
+  color: white;
+  text-decoration: none;
+}
+a.for:link
+{
+  color: black;
+}
+a.for:visited
+{
+  color: black;
+}
+
+.newo
+{
+  font-size: 16px;
+  font-weight: bolder;
+  text-align: left;
+}
+footer.foot
+{
+  background-color: rgb(36, 40, 55);
+  opacity: 0.7;
+  height: 300px;
+  width: 100%;
+}
+.foot-main
+{
+  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 15px;
+  padding: 50px;
+  opacity:1;
+  width: 75%;
+  height: 90%;
+  margin: 5% auto;
+  color:white;
+}
+.main1
+{
+  width: 70%;
+  background-color: ;
+}
+li.opp
+{display: block;
+  border-radius: 15px;
+
+  }
+li.opp:nth-child(even)
+{
+  background-color: white;
+  color: black;
+}
+li.opp1
+{display: block;
+  border-radius: 15px;
+
+  }
+li.opp1:nth-child(odd)
+{
+  background-color: white;
+  color: black;
+}
+div.ima
+{
+  margin: 4% auto;
+display: block;
+height: inherit;
+width: inherit;
+}
+div.info
+{
+  text-align: center;
+  font-size: 16px;
+  color: white;
+}
+.blur
+{
+  text-decoration: none;
+  color: black;
+}
+.blur:hover
+{
+  text-decoration: none;
+  color: white;
+}
+.blur:visited
+{
+  text-decoration: none;
+  color: black;
+}
+.blur:link
+{
+  text-decoration: none;
+  color: black;
+}
