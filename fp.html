@@ -19,15 +19,15 @@
   <header>
     <nav>
       <ul class="nav">
-        <li class="nav-opt-1"><a href="some.html" class="root">
+        <li class="nav-opt-1"><a href="index.html" class="root">
           <img class="logo" src="images/logo2.png" alt="logo-of-iSports">
           <b>iSports</b>
         </a></li>
-        <li class="nav-opt"><a href="index.html" class="root">Home</a></li>
-        <li class="nav-opt"><a class="root" href="ishop.html">iShop</a></li>
-        <li class="nav-opt"><a class="root" href="iplay.html">iPlay</a></li>
+        <li class="nav-opt"><a class="root" href="ishop.html">ishop</a></li>
+        <li class="nav-opt"><a class="root" href="Cart.html">iCart</a></li>
+        <li class="nav-opt"><a class="root" href="sign.html">Account</a></li>
         <li class="nav-opt"><a class="root" href="support.html">Support</a></li>
-        <div style="width:37%;"></div>
+        <div style="width:30%;"></div>
         <form class="form-inline my-40 my-lg-1" role="search" method="get" action="index.html" style="float: right;">
           <input class="form-control my-lg-1" type="search" placeholder="Search" aria-label="Search" style="margin-top: 0cm;width:; padding: 0px 10px; margin-right: 10px;">
           <button class="btn btn-outline-primary my-1 my-sm-0" type="submit">Search</button>
@@ -50,32 +50,35 @@
   <div class="main-log">
     <br><br>
     <h1 class="term">iSports</h1>
-    <p class="cos">Forgot Password</p>
+    <p class="cos">Forgot/Change Password</p>
 
 <form>
   <div>
     <div class="form-group">
       <label for="inputEmail">Email</label>
-      <input type="email" class="form-control" id="inputEmail">
+      <input type="email" class="form-control" id="inputEmail" required>
     </div>
     <label for="inputName">Username</label><br>
     <div class="input-group mb-2">
       <div class="input-group-prepend">
         <div class="input-group-text" style="margin-bottom: 12px;">@</div>
       </div>
-      <input type="text" class="form-control" id="inlineFormInputGroup"  style="margin-bottom: 12px;" placeholder="Username">
+      <input type="text" class="form-control" id="inlineFormInputGroup"  style="margin-bottom: 12px;" placeholder="Username" required>
     </div>
     <div class="form-group">
       <label for="inputPassword">Password</label>
-      <input type="password" name="pass1" class="form-control" id="inputPassword">
+      <input type="password" name="pass1" class="form-control" id="inputPassword" required>
     </div>
     <div class="form-group">
       <label for="inputPassword">Confirm Password</label>
-      <input type="password" name="pass2" class="form-control" id="inputPassword">
+      <input type="password" name="pass2" class="form-control" id="inputPassword2">
     </div>
     <br>
-    <button type="submit" class="btn btn-light" style="padding: 6px 27px;width:100%;opacity:1;">Change Password</button>
+    <button type="submit" class="btn btn-light" onclick="chpass()" style="padding: 6px 27px;width:100%;opacity:1;">Change Password</button>
 <br><br>
+<button type="submit" class="btn btn-light" style="padding: 6px 27px;width:100%;opacity:1;"><a href="signin.html">Go To Account</a></button>
+
+<br>
   </div>
 </form>
 </div>
@@ -111,18 +114,29 @@
 
 </footer>
 <script>
-function login() {
-var un = document.getElementById('un');
-var pas = document.getElementById('pass');
-if (1) {
-  alert("Enter a valid credit");
+function chpass() {
+  var mail,un,pas1,pas2;
+mail = document.getElementById('inputEmail').value;
+un = document.getElementById('inlineFormInputGroup').value;
+pas1 = document.getElementById('inputPassword').value;
+pas2 = document.getElementById('inputPassword2').value;
+if (mail=='user@isports.com') {
+  if (un=='user') {
+    if (pas1==pas2) {
+      alert("Password will be Changed after Email confirmation");
+    }
+    else {
+      alert("Your passwords doesn't match");
+    }
+  }
+  else {
+    alert("Enter a Valid Credits");
+  }
 }
-if (isEmpty(un)&&isEmpty(pas)) {
-  alert("Enter a valid credit");
+else {
+  alert("Enter a Valid Credits");
 }
-if (1) {
-  alert("Enter a valid credit");
-}
+
 }
 </script>
 </body>

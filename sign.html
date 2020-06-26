@@ -20,15 +20,16 @@
   <header>
     <nav>
       <ul class="nav">
-        <li class="nav-opt-1"><a href="some.html" class="root">
+        <li class="nav-opt-1"><a href="index.html" class="root">
           <img class="logo" src="images/logo2.png" alt="logo-of-iSports">
           <b>iSports</b>
         </a></li>
-        <li class="nav-opt"><a href="ishop.html" class="root">Home</a></li>
+        <li class="nav-opt"><a href="index.html" class="root">Home</a></li>
         <li class="nav-opt"><a class="root" href="ishop.html">ishop</a></li>
-        <li class="nav-opt"><a class="root" href="iplay.html">iPlay</a></li>
+        <li class="nav-opt"><a class="root" href="sign.html">iCart</a></li>
+        <li class="nav-opt"><a class="root" href="sign.html">Account</a></li>
         <li class="nav-opt"><a class="root" href="support.html">Support</a></li>
-        <div style="width:37%;"></div>
+        <div style="width:30%;"></div>
         <form class="form-inline my-40 my-lg-1" role="search" method="get" action="index.html" style="float: right;">
           <input class="form-control my-lg-1" type="search" placeholder="Search" aria-label="Search" style="margin-top: 0cm;width:; padding: 0px 10px; margin-right: 10px;">
           <button class="btn btn-outline-primary my-1 my-sm-0" type="submit">Search</button>
@@ -53,20 +54,21 @@
 <h1 class="term">iSports</h1>
 <p class="cos">Account - Login</p>
 <br><br>
-<formo name="f1">
+<form name="f1">
 <div class="input-group mb-3" style="margin:0px auto;width: 100%;opacity:0.8;">
   <div class="input-group-prepend">
     <span class="input-group-text" id="basic-addon1">@</span>
   </div>
-  <input type="text" id="un" class="form-control" name="Username" placeholder="Username"  style="opacity:1;" aria-label="Username" aria-describedby="basic-addon1" >
+  <input type="text" id="un" class="form-control" name="Username" size="15" placeholder="Username"  style="opacity:1;" aria-label="Username" aria-describedby="basic-addon1" required>
 </div><div style="height:7px;"></div>
 <div class="input-group mb-3" style="margin:0px auto;width: 100%;opacity:0.8;">
   <div class="input-group-prepend">
   </div>
-  <input type="password" id="pass" name="password" class="form-control" placeholder="Password" style="opacity:1;" aria-label="Password" aria-describedby="basic-addon1" >
+  <input type="password" id="pass" name="password" class="form-control" size="25" placeholder="Password" style="opacity:1;" aria-label="Password" aria-describedby="basic-addon1" required>
 </div><br>
 <div style="margin-left: 0%;">
-<button type="submit" onclick="login()" class="btn btn-light" style="padding: 6px 27px;width:100%;opacity:1;">Sign-In</button>
+<button type="submit" onclick="login()" class="btn btn-light" style="padding: 6px 27px;width:100%;opacity:1;"><a href="iShop.html">Sign-In</a></button>
+
 </div>
 <br>
 <div class="part">
@@ -75,7 +77,7 @@
 <div class="new">
   <p class="newo"><b><u>New to iSports?</u></b> <a class="for" href="signup.html">create an account</a></p><br>
 </div>
-</formo>
+</form>
 
 </div>
 </div>
@@ -111,11 +113,23 @@
 </footer>
 <script>
 function login() {
-var un = document.f1.Username.value;
-var pas = document.f1.password.value;
-if (1)
+var un,pas;
+var sign=
+un = document.getElementById('un').value;
+pas = document.getElementById('pass').value;
+if (un=='user')
 {
-  alert("Enter a valid credit ");
+  if (1)
+  {
+  }
+
+  else {
+    alert("Incorrect Password");
+  }
+}
+  else {
+    alert("Enter a Valid Credits");
+
 }
 
 }

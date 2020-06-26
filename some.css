@@ -3,6 +3,7 @@ html {
   }
 body{
     overflow: hidden;
+    background-color: rgb(36, 40, 55);
 }
 .banner1,.banner2,.banner3,.banner4{
     height: 90vh;
@@ -94,10 +95,10 @@ img{
     }
     75%{
         visibility: hidden;
-    } 
+    }
     100%{
         visibility: visible;
-    }    
+    }
 }
 @keyframes slide2{
     0%{
@@ -111,10 +112,10 @@ img{
     }
     75%{
         visibility: hidden;
-    } 
+    }
     100%{
         visibility: hidden;
-    }    
+    }
 }
 @keyframes slide3{
     0%{
@@ -128,10 +129,10 @@ img{
     }
     75%{
         visibility: visible;
-    } 
+    }
     100%{
         visibility: hidden;
-    }    
+    }
 }
 @keyframes slide4{
     0%{
@@ -145,10 +146,10 @@ img{
     }
     75%{
         visibility: hidden;
-    } 
+    }
     100%{
         visibility: visible;
-    }    
+    }
 }
 @keyframes zoom-out{
     100%{
@@ -208,4 +209,3 @@ a {
         opacity: 1;
         animation: animate 8s linear infinite;
     }
-   
